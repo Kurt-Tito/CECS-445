@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyerScript : MonoBehaviour {
 
-    public GameObject floor;
+    //public GameObject floor;
 
 	void OnTriggerEnter2D(Collider2D col)
     {
@@ -12,7 +12,6 @@ public class DestroyerScript : MonoBehaviour {
         {
             //destroy object
             Destroy(col.gameObject);
-            Instantiate(floor, new Vector3(24, -5, 3), Quaternion.identity);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{C8CCE9F6-5FB4-1949-2B71-7B934BE49578}"
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CECS-445", "CECS-445.csproj", "{086574E9-EB38-C2B9-E426-D322D510601F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8CCE9F6-5FB4-1949-2B71-7B934BE49578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8CCE9F6-5FB4-1949-2B71-7B934BE49578}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8CCE9F6-5FB4-1949-2B71-7B934BE49578}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8CCE9F6-5FB4-1949-2B71-7B934BE49578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086574E9-EB38-C2B9-E426-D322D510601F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086574E9-EB38-C2B9-E426-D322D510601F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086574E9-EB38-C2B9-E426-D322D510601F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086574E9-EB38-C2B9-E426-D322D510601F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
