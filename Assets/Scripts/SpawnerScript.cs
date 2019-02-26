@@ -24,7 +24,7 @@ public class SpawnerScript : MonoBehaviour {
 
     public void spawnFloor()
     {
-        int roll = Random.Range(1, 3);
+        int roll = Random.Range(1, 4);
 
         switch (roll)
         {
