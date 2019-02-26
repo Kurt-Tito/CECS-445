@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour {
 
     private Rigidbody2D player;
     private Vector3 direction = new Vector3(0.0f, 1.0f, 0.0f);
-    private float force = 35.0f;
+    private float force = 40.0f;
     public static int playerLives = 3;
     //private int jumpCount = 0;
 

@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 {
     public Text scoreText;
     public Text highscoreText;
-    public float scoreCount;
+    public static float scoreCount;
     public float highscoreCount;
     public float points;
     // Start is called before the first frame update
