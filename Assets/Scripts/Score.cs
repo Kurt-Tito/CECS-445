@@ -10,6 +10,7 @@ public class Score : MonoBehaviour
     public static float scoreCount;
     public float highscoreCount;
     public float points;
+    public bool scoreInc;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,10 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreCount += points * Time.deltaTime;
+        if (scoreInc)
+        {
+            scoreCount += points * Time.deltaTime;
+        }
         if (scoreCount > highscoreCount)
         {
             highscoreCount = scoreCount;

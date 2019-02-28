@@ -7,8 +7,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
 
     private int intScore;
-
-	void Start () {
+    void Start () {
         Time.timeScale = 1.0f;
     }
 
@@ -25,4 +24,5 @@ public class GameManager : MonoBehaviour {
             //Debug.Log(intScore);
         }
 	}
+
 }
