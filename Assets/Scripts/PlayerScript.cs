@@ -31,6 +31,7 @@ public class PlayerScript : MonoBehaviour {
             player.AddForce(direction * force, ForceMode2D.Impulse);
             //player.transform.position += direction;
         }
+
         Restart();
     }
 
@@ -46,10 +47,19 @@ public class PlayerScript : MonoBehaviour {
                 Score.scoreCount = 0;
                 score.scoreInc = true;
                 start.msg = true;
-                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
+                /*
+                foreach (GameObject o in Object.FindObjectsOfType<GameObject>())
+                {
+                    Destroy(o);
+                }
+                */
+
+                SceneManager.LoadScene("Game");
             }
         }
     }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "obstacle")

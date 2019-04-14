@@ -6,6 +6,7 @@ public class SpawnerScript : MonoBehaviour {
 
     public GameObject floor_var1, floor_var2, floor_var3;
     private float next_spawn_time;
+    private float time;
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +15,10 @@ public class SpawnerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if (Time.time > next_spawn_time)
+
+        time = Time.timeSinceLevelLoad;
+
+        if (time > next_spawn_time)
         {
             spawnFloor();
             next_spawn_time += 4.5f;
