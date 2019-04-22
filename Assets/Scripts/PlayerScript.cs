@@ -65,7 +65,6 @@ public class PlayerScript : MonoBehaviour {
         if (col.gameObject.tag == "obstacle")
         {
             Debug.Log("player hit");
-
             if (playerLives > 0)
             {
                 playerLives--;

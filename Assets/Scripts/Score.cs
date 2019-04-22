@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        highscoreCount = PlayerPrefs.GetFloat("HighScore", highscoreCount);
     }
 
     // Update is called once per frame
@@ -30,6 +30,6 @@ public class Score : MonoBehaviour
         }
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
         highscoreText.text = "High Score: " + Mathf.Round(highscoreCount);
-
+        PlayerPrefs.SetFloat("HighScore", highscoreCount);
     }
 }
