@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour {
     public static int playerLives = 3;
     private Score score;
     private Restart start;
+    private Animator anim;
     //private int jumpCount = 0;
 
     //private bool isGrounded = false;
@@ -20,7 +21,9 @@ public class PlayerScript : MonoBehaviour {
         player = GetComponent<Rigidbody2D>();
         score = FindObjectOfType<Score>();
         start = FindObjectOfType<Restart>();
-	}
+        anim = GetComponent<Animator>();
+        anim.SetBool("isJump", false);
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -62,6 +65,10 @@ public class PlayerScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
+
+        if (col.gameObject.tag == "Floor") //check if player is colliding with floor 
+            anim.SetBool("isJump", false);  //then set isJump bool to false for animator
+
         if (col.gameObject.tag == "obstacle")
         {
             Debug.Log("player hit");
@@ -79,5 +86,11 @@ public class PlayerScript : MonoBehaviour {
         {
             Time.timeScale = 0.0f;
         }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Floor") //check if player is not colliding with floor 
+            anim.SetBool("isJump", true); //then set isJump bool to true for animator
     }
 }
