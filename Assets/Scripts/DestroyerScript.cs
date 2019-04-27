@@ -13,5 +13,8 @@ public class DestroyerScript : MonoBehaviour {
             //destroy object
             Destroy(col.gameObject);
         }
+
+        if (col.CompareTag("bullet"))
+            Destroy(col.gameObject);
     }
 }

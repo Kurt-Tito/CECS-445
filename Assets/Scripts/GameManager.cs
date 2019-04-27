@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
 
     private int intScore;
+    public static float globalTimeScale;
+
     void Start () {
         Time.timeScale = 1.0f;
     }
@@ -23,6 +25,9 @@ public class GameManager : MonoBehaviour {
             Debug.Log(Time.timeScale);
             //Debug.Log(intScore);
         }
+
+        globalTimeScale = Time.timeScale;
+        Debug.Log("Global Time Scale: " + globalTimeScale);
 	}
 
 }
