@@ -69,7 +69,7 @@ public class PlayerScript : MonoBehaviour {
         if (col.gameObject.tag == "Floor") //check if player is colliding with floor 
             anim.SetBool("isJump", false);  //then set isJump bool to false for animator
 
-        if (col.gameObject.tag == "obstacle")
+        if (col.gameObject.tag == "obstacle" || col.gameObject.tag == "bird")
         {
             Debug.Log("player hit");
             if (playerLives > 0)
